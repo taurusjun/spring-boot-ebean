@@ -1,0 +1,30 @@
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<h1>Albums</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 table-responsive">
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th width="20%">Album</th>
+					<th>Description</th>
+					<th width="15%">Actions</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr ng-repeat="album in albums">
+					<td width="20%"><a ng-href="#/album/{{album.id}}">{{album.name}}</a></td>
+					<td>
+						{{album.description}}<br/>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

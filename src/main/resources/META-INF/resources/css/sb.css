@@ -1,0 +1,15 @@
+/*
+* styles we need for this sample app
+*/
+
+.nav, .pagination, .carousel, .panel-title a {
+	cursor: pointer;
+}
+
+.ebean-boot {
+	padding-top: 50px;
+}
+
+/* prevents the "flash" on load */
+*[loading="{{1}}"] { display: none; }
+
